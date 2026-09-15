@@ -1,0 +1,38 @@
+COSC 325 Course Project: Motivation
+Team number:
+Team name:
+Team members:
+
+For the course project, your team will explore the machine learning life cycle: you will find a use case / application you are excited about, get a baseline machine learning model operational for that application, improve the model’s performance, and report your findings in a research conference paper format. 
+In this motivation section of the project, we are exploring the “why”. Before we start any data processing or model programming, we need to identify the problem and what solutions exist. Then, we need to make a roadmap of how we will investigate and (hopefully!) solve the problem ourselves.
+
+1.	Who is your target audience / end user?
+2.	What is the problem to solve? 
+3.	Why is this an important problem that needs to be solved right now? How will solving it improve your end user’s life?
+4.	What has been tried so far? How do these solutions fall short? Provide 2-3 full citations. (For example, maybe an existing model does not look at a certain feature you think is important to consider, or maybe it is a good solution, but for a slightly different problem.)
+5.	What machine learning technique(s) are you planning to use to solve your problem? Why?
+6.	What is the dataset for your project? How much effort will it take to get the data ready for ML training?
+7.	What are the baseline model(s) and paper(s) you will use for inspiration?
+8.	How will you measure success? (Examples: Classification: Accuracy, F1, ROC-AUC, Precision/Recall; Regression: MSE, RMSE, R²)
+9.	Do you have enough computational resources to handle the machine learning technique and the data? Can you train the model with the resources you have?
+10.	What are the key milestones in your roadmap? 
+Add or delete rows as needed. Grids are a helpful way to visualize the tasks you envision.  
+
+	Milestone/Feature Description	Priority	Deadline
+1			
+2			
+3			
+4			
+5			
+6			
+7	Submit midterm project report (CP#2)	High	10/23/26
+8			
+9			
+10			
+11			
+12			
+13	Submit project presentation (CP#3)	High	11/13/26
+			
+14	Submit final project report (CP#4)	High	12/01/26
+
+
