@@ -1,21 +1,62 @@
 COSC 325 Course Project: Motivation
-Team number:
-Team name:
-Team members:
+Team number: 7
+Team name: ????? OpenField ??????
+Team members: Jackson Murphy, Kenneth Hinman, Cade Damron
 
 For the course project, your team will explore the machine learning life cycle: you will find a use case / application you are excited about, get a baseline machine learning model operational for that application, improve the model’s performance, and report your findings in a research conference paper format. 
 In this motivation section of the project, we are exploring the “why”. Before we start any data processing or model programming, we need to identify the problem and what solutions exist. Then, we need to make a roadmap of how we will investigate and (hopefully!) solve the problem ourselves.
 
 1.	Who is your target audience / end user?
+	College football fans and analysts are the audience. 
+	College football fans and analysts who want to use information to better understand and evaluate upcoming games. 
+	The system is made for people who care about team performance and game predictions. 
+	Who may not have the time or the statistical background to build predictive models themselves.
+
 2.	What is the problem to solve? 
+	We want to create a machine learning model that predicts who will win an NCAA Division I FBS football game using data that is known before the game starts.
+	The model will look at team and game data like how well a team scores, how well they stop the other team how many times they lose the ball, how they do when running the ball and throwing the ball what happened in previous
+	games and maybe rankings or other things that are known before the game starts—to figure out which team is more likely to win.
+
 3.	Why is this an important problem that needs to be solved right now? How will solving it improve your end user’s life?
+	College football generates a lot of stats every week. It can be hard for fans to know which of those numbers actually help predict what will happen in a game. Some systems already show that past performance data and machine learning can help find patterns between how teams play and who wins.
+	Our project aims to give users a way to bring all these statistics into one prediction. Instead ff just using lines like win-loss records or average points scored people can use a model that looks at many parts of team performance at once.
+	This could make things better for fans by:
+		Giving a starting point to look at upcoming games with real numbers.
+		Helping make big piles of football data easier to understand.
+		Showing which team stats are most helpful when making predictions.
+		Letting users compare the model’s guesses with results.
+
 4.	What has been tried so far? How do these solutions fall short? Provide 2-3 full citations. (For example, maybe an existing model does not look at a certain feature you think is important to consider, or maybe it is a good solution, but for a slightly different problem.)
+
+
 5.	What machine learning technique(s) are you planning to use to solve your problem? Why?
+
+
 6.	What is the dataset for your project? How much effort will it take to get the data ready for ML training?
+
+
 7.	What are the baseline model(s) and paper(s) you will use for inspiration?
+
+
 8.	How will you measure success? (Examples: Classification: Accuracy, F1, ROC-AUC, Precision/Recall; Regression: MSE, RMSE, R²)
+	Because our main task is classification our main evaluation metrics will be:
+		Accuracy. The percentage of games where the model correctly predicts the winner.
+		Precision. How often a predicted win for a team actually results in a win.
+		Recall. How actual wins the model manages to detect.
+		F1-score. A balance between precision and recall.
+		ROC-AUC. Shows how well the model separates the two outcomes.
+	Our main metric will probably be accuracy since the goal is simply to predict whether a team wins or loses.
+	We will report several metrics instead of depending only on accuracy. This helps us understand how the model behaves across situations.
+	We will also compare every machine learning model to our baseline. Success will mean showing improvement over that baseline on a test set we did not use during training. It’s not enough to reach a certain accuracy number.
+
 9.	Do you have enough computational resources to handle the machine learning technique and the data? Can you train the model with the resources you have?
+	Yes.
+	The models and dataset that we have planned are not very large when compared to the datasets that are usually used for learning. Our first models can be trained on personal computers using Python and libraries.
+	The College Football Data API gives game and statistical information through HTTP requests so we do not need special equipment to get the data.
+	The dataset will include thousands of games not millions or billions of examples. Because of this our main challenge with computing is expected to be preparing the data and creating features, rather than the hardware needed for training the models.
+
 10.	What are the key milestones in your roadmap? 
+
 Add or delete rows as needed. Grids are a helpful way to visualize the tasks you envision.  
 
 	Milestone/Feature Description	Priority	Deadline
