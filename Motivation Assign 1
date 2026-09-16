@@ -1,6 +1,6 @@
 COSC 325 Course Project: Motivation
 Team number: 7
-Team name: ????? OpenField ??????
+Team name: OpenField
 Team members: Jackson Murphy, Kenneth Hinman, Cade Damron
 
 For the course project, your team will explore the machine learning life cycle: you will find a use case / application you are excited about, get a baseline machine learning model operational for that application, improve the model’s performance, and report your findings in a research conference paper format. 
@@ -30,12 +30,23 @@ In this motivation section of the project, we are exploring the “why”. Befor
 
 
 5.	What machine learning technique(s) are you planning to use to solve your problem? Why?
+    Use supervised learning since we will be training it on labeled data that is already known
+    Use classification methods since we are determining a yes/no outcome (will a team win or lose)
 
 
 6.	What is the dataset for your project? How much effort will it take to get the data ready for ML training?
+    Our dataset is the “College Football Game Stats | 2002 to January 2026” dataset from Kaggle
+    It will take a good bit of effort to get the data ready for these reasons:
+        Conference changes throughout the year will make it hard to weigh in-conference games
+        Rankings only go up to 25 (AP Poll is only out of 25), so most teams won’t have an assigned ranking.
+        Weighing early season “cupcake” games properly
+        11% of teams in the dataset don’t have values for the ‘conf_away’ column, so we’ll need to find a way to address this.
+        Handling missing game stats properly and filling them in will also be a challenge.
 
 
 7.	What are the baseline model(s) and paper(s) you will use for inspiration?
+    Start with a logistic regression model to further hone our feature selection and data preprocessing.
+    Move to more advanced models or ensemble methods once we’ve determined the best feature selection and data preprocessing methods for out dataset.
 
 
 8.	How will you measure success? (Examples: Classification: Accuracy, F1, ROC-AUC, Precision/Recall; Regression: MSE, RMSE, R²)
@@ -48,6 +59,7 @@ In this motivation section of the project, we are exploring the “why”. Befor
 	Our main metric will probably be accuracy since the goal is simply to predict whether a team wins or loses.
 	We will report several metrics instead of depending only on accuracy. This helps us understand how the model behaves across situations.
 	We will also compare every machine learning model to our baseline. Success will mean showing improvement over that baseline on a test set we did not use during training. It’s not enough to reach a certain accuracy number.
+	Since the dataset only goes up to January 2026, we will test the model against the entire 2025-2026 season. We will train and validate the model on all seasons before the 2025-2026 season and then test it on the 2025-2026 season to see how it performs and get our success measurements.
 
 9.	Do you have enough computational resources to handle the machine learning technique and the data? Can you train the model with the resources you have?
 	Yes.
