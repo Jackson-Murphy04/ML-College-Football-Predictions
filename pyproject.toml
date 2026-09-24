@@ -1,0 +1,22 @@
+[project]
+name = "ml-college-football-predictions"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "kagglehub>=1.0.2",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+    "xgboost>=3.4.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipywidgets>=8.1.9",
+    "jupyterlab>=4.6.4",
+]
