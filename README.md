@@ -1,12 +1,12 @@
 # CS 325 Group Project: Predicting College Football Game Outcomes
 
-This repository contains the code and resources for our group project in CS 325, 
-which aims to predict the outcomes of college football games using machine learning techniques.
-
 ## Project Structure
 
 ```
 ├── data_exploration.ipynb   # Exploratory data analysis
+├── data_transform.ipynb     # Data cleaning/transformation
+├── feature_selection.ipynb  # Feature selection
+├── modeling.ipynb           # ML Modeling/Training
 ├── datasets/                # Downloaded data and transformed data
 ├── docs/                    # Project proposal and write-ups
 ├── main.py                  # Script entry point
