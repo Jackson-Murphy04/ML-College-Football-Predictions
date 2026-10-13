@@ -7,7 +7,7 @@ which aims to predict the outcomes of college football games using machine learn
 
 ```
 ├── data_exploration.ipynb   # Exploratory data analysis
-├── datasets/                # Raw / downloaded data
+├── datasets/                # Downloaded data and transformed data
 ├── docs/                    # Project proposal and write-ups
 ├── main.py                  # Script entry point
 ├── pyproject.toml           # Project dependencies (managed by uv)
@@ -62,31 +62,11 @@ uv run jupyter lab
 - **Run `uv sync` after pulling** if someone else changed the dependencies.
 - **Restart the notebook kernel** after adding a package so the notebook can import it.
 
-## Downloading Data from Kaggle
-
-We use [`kagglehub`](https://github.com/Kaggle/kagglehub) to download datasets:
-
-```python
-import kagglehub
-
-path = kagglehub.dataset_download("owner/dataset-name")
-print(path)  # local folder containing the dataset files
-```
-
-Downloads are cached (in `~/.cache/kagglehub/`), so running this again doesn't download the files again.
-
-**Authentication** (needed for some datasets):
-1. Go to kaggle.com → **Settings** → **API** → **Create New Token**.
-2. Move the downloaded file to `~/.kaggle/kaggle.json`.
-3. On macOS/Linux, restrict its permissions: `chmod 600 ~/.kaggle/kaggle.json`.
-
-**Never commit `kaggle.json` or any API keys.** Put secrets in a `.env` file (already gitignored).
-
 ## Tips
 
 **Git and notebooks**
 - **Clear outputs before committing notebooks** (Jupyter: *Edit → Clear All Outputs*; VS Code: *Clear All Outputs* in the toolbar). Outputs make diffs noisy and cause merge conflicts.
-- **Avoid editing the same notebook as a teammate at the same time.** Notebook merge conflicts are hard to resolve. Make your own notebook (e.g. `modeling_kenneth.ipynb`) for experiments.
+- **Avoid editing the same notebook as a teammate at the same time.** Notebook merge conflicts are hard to resolve. Make your own notebook (e.g. `modeling_yourName.ipynb`) for experiments.
 - **Move reusable code (data loading, feature engineering) into `.py` files** and import it from notebooks, so everyone uses the same logic.
 
 **Modeling**
